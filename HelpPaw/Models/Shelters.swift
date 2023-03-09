@@ -28,7 +28,7 @@ struct Animal {
 
 enum City: String {
     case moscow = "Москва"
-    case stPereburg = "Санкт-петербург"
+    case stPeterburg = "Санкт-петербург"
     case tumen = "Тюмень"
     case ekaterinburg = "Екатеринбург"
     case krasnodar = "Краснодар"
