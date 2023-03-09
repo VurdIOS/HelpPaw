@@ -9,22 +9,6 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="rgA-X3-xAK">
-            <objects>
-                <viewController id="fjl-Oc-tJC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="25h-o9-ee8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="GHL-DI-iFo"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Vrf-DI-Slf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SUr-Q3-PhT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1701" y="297"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="FMu-Ky-tzn">
             <objects>
                 <viewController id="Vwf-L1-pYR" sceneMemberID="viewController">
@@ -62,15 +46,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKQ-mH-EBH">
-                                <rect key="frame" x="115" y="392" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <segue destination="fjl-Oc-tJC" kind="show" id="Lmr-qi-sTC"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aWh-aG-GrL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -152,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o5d-Qb-bOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894.375" y="718.30985915492954"/>
+            <point key="canvasLocation" x="1701" y="292"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="GGn-e0-jOF">
@@ -181,7 +156,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsz-ND-2lI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1701" y="-538"/>
+            <point key="canvasLocation" x="1701" y="-408"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Agy-kt-Cvd">
@@ -199,7 +174,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tcu-gC-qKo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="77" y="-38"/>
+            <point key="canvasLocation" x="143" y="-38"/>
         </scene>
     </scenes>
     <resources>
