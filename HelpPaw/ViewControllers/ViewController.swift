@@ -6,10 +6,7 @@
 //
 
 import UIKit
-// MARK: - jghjg
-// MARK: - dsfsdf
-// MARK: - sadasd
-// MARK: - Привет
+
 class ViewController: UIViewController {
     // tomuko
 
