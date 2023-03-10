@@ -26,7 +26,7 @@ struct Animal {
     let description: String
 }
 
-enum City: String {
+enum City: String, CaseIterable {
     case moscow = "Москва"
     case stPeterburg = "Санкт-петербург"
     case tumen = "Тюмень"
