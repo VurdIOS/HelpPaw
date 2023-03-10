@@ -90,7 +90,7 @@ class DataManager {
         Shelter(
             city: .tumen,
             name: "Близкий друг",
-            adress: "Тюмень, Голышева, 1/1",
+            address: "Тюмень, Голышева, 1/1",
             animals: [
                 Animal(
                     type: "Собака",
@@ -115,7 +115,7 @@ class DataManager {
       Shelter(
             city: .krasnodar,
             name: "Краснодог",
-            adress: "Краснодар, ул. Куйбышева, 2",
+            address: "Краснодар, ул. Куйбышева, 2",
             animals: [
                 Animal(
                     type: "Собака",
@@ -140,7 +140,7 @@ class DataManager {
         Shelter(
             city: .tumen,
             name: "Мурка и Васька",
-            adress: "Тюмень, Харьковская, 85а — 1 этаж",
+            address: "Тюмень, Харьковская, 85а — 1 этаж",
             animals: [
                 Animal(
                     type: "Кот",
@@ -159,10 +159,13 @@ class DataManager {
                     name: "Марвел",
                     age: 2,
                     description: "Изящный мягкий чёрный котик по имени Марвел. Мальчишке два-три годика. Ждёт любящих хозяев. Кот привит, кастрирован, кушает всё, туалет - в лоток. Добрый, ласковый, но серьёзный - настоящий мужчина."
-
+                    )
+                ]
+            ),
+        Shelter(
             city: .krasnodar,
             name: "Вишневский приют для животных",
-            adress: "Краснодар, ул. Солнечная, 58",
+            address: "Краснодар, ул. Солнечная, 58",
             animals: [
                 Animal(
                     type: "Собака",
@@ -188,7 +191,7 @@ class DataManager {
         Shelter(
             city: .tumen,
             name: "МКУ 'ЛесПаркХоз'",
-            adress: "Тюмень, ул.Кедровая, 133",
+            address: "Тюмень, ул.Кедровая, 133",
             animals: [
                 Animal(
                     type: "Кошка",
@@ -213,7 +216,7 @@ class DataManager {
         Shelter(
             city: .krasnodar,
             name: "Южный",
-            adress: "Краснодар, 1-я Дорожная ул., 21",
+            address: "Краснодар, 1-я Дорожная ул., 21",
             animals: [
                 Animal(
                     type: "Собака",
@@ -238,7 +241,7 @@ class DataManager {
         Shelter(
             city: .stPeterburg,
             name: "Потеряшка",
-            adress: "Санкт-Петербург, Лиговский проспект, д. 291",
+            address: "Санкт-Петербург, Лиговский проспект, д. 291",
             animals: [
                 Animal(
                     type: "Собака",
@@ -261,7 +264,7 @@ class DataManager {
         Shelter(
             city: .stPeterburg,
             name: "Верность",
-            adress: "Санкт-Петербург, ул. Мира, д. 5",
+            address: "Санкт-Петербург, ул. Мира, д. 5",
             animals: [
                 Animal(
                     type: "Собака",
@@ -283,7 +286,7 @@ class DataManager {
         Shelter(
             city: .stPeterburg,
             name: "Ржевка",
-            adress: "Санкт-Петербург, Ржевка, ​ул. Поселковая, д. 9",
+            address: "Санкт-Петербург, Ржевка, ​ул. Поселковая, д. 9",
             animals: [
                 Animal(
                     type: "Кошка",
