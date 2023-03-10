@@ -11,7 +11,7 @@ import Foundation
 struct Shelter {
     let city: City
     let name: String
-    let adress: String
+    let address: String
     
     let animals: [Animal]
     
