@@ -21,16 +21,19 @@ class AnimalInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "О животном"
         nameAnimalLAbel.text = animal.name
         yearsOldLabel.text = String(animal.age)
         descriptionLabel.text = animal.description
         animalImage.image = UIImage(named: "\(animal.name)")
-        animalImage.layer.cornerRadius = animalImage.frame.height / 2
-        // не меняется скругление у картинок
         
-        customView.layer.cornerRadius = 20
         customView.makeShadow()
-        customView.setupColor()
+        setupView()
+    }
+    
+    private func setupView() {
+        customView.layer.cornerRadius = 20
+        customView.backgroundColor = .systemBrown
     }
 }
 
@@ -40,16 +43,5 @@ private extension UIView {
         self.layer.shadowOpacity = 0.7
         self.layer.shadowOffset = CGSizeZero
         self.layer.shadowRadius = 5
-    }
-    
-    func setupColor() {
-        let color = UIColor(
-            red: 204/255,
-            green: 204/255,
-            blue: 255/255,
-            alpha: 1
-        )
-        
-        self.backgroundColor = color
     }
 }
