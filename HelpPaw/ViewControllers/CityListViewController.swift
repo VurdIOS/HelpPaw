@@ -51,3 +51,4 @@ private extension CityListViewController {
         return sheltersFromCity
     }
 }
+// укмукмукму
