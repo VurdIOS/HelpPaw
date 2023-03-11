@@ -14,6 +14,7 @@ class AnimalListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Animal list"
+        tableView.rowHeight = 160
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -32,8 +33,9 @@ class AnimalListViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         
         content.text = animals[indexPath.row].name
-        content.secondaryText = String(animals[indexPath.row].age)
-        content.image = UIImage(named: "\(animals[indexPath.row].name).jpeg")
+        content.textProperties.alignment = .center
+        content.image = UIImage(named: "\(animals[indexPath.row].name)")
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
         
         cell.contentConfiguration = content
         

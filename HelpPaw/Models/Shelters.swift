@@ -32,6 +32,7 @@ enum City: String, CaseIterable {
     case tumen = "Тюмень"
     case ekaterinburg = "Екатеринбург"
     case krasnodar = "Краснодар"
+    case nizhnyNovgorod = "Нижний Новгород"
 }
 
 enum Breed: String {
