@@ -11,10 +11,8 @@ class UserProfileViewController: UIViewController {
     
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var ageTextField: UITextField!
-    @IBOutlet var placeOfWorkTextField: UITextField!
     @IBOutlet var addressOfResidenceTextField: UITextField!
     @IBOutlet var contactNumberTextField: UITextField!
-    @IBOutlet var emailTextField: UITextField!
     @IBOutlet var childrenTextField: UITextField!
     
     
@@ -23,7 +21,7 @@ class UserProfileViewController: UIViewController {
     }
     
     @IBAction func sendQuestionnaire() {
-        let  questionnaireTextFields = [userNameTextField, ageTextField, placeOfWorkTextField, addressOfResidenceTextField, contactNumberTextField, emailTextField, childrenTextField]
+        let  questionnaireTextFields = [userNameTextField, ageTextField, addressOfResidenceTextField, contactNumberTextField, childrenTextField]
         
         var allFieldsFilled = true
         for questionnaireTextField in questionnaireTextFields {
