@@ -8,13 +8,24 @@
 import UIKit
 
 final class DevelopersTableViewController: UITableViewController {
+    
 
     private let developers = Developers.getDevelopersInfo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Разработчики"
         tableView.rowHeight = 100
 
+    }
+    
+    func footerView() -> UIView {
+        let whitView = UIView(frame:CGRect(x: 0, y: 0, width: 50, height: 500))
+        view.addSubview(whitView)
+        let imgView = UIImageView(frame:CGRect(x: 160, y: 20, width: 100, height: 100))
+        imgView.image = UIImage(systemName: "pawprint.circle.fill")
+        whitView.addSubview(imgView)
+        return whitView
     }
 
     // MARK: - Table view data source
@@ -35,6 +46,16 @@ final class DevelopersTableViewController: UITableViewController {
         
         
         return cell
+    }
+    
+    
+    
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 100
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return footerView()
     }
 
 
