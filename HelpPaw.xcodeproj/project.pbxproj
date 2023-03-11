@@ -24,7 +24,6 @@
 		ADA68C7E29B9F3CC00E0EBB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA68C7C29B9F3CC00E0EBB8 /* LaunchScreen.storyboard */; };
 		ADA68CA929BA5AFC00E0EBB8 /* Shelters.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA68CA829BA5AFC00E0EBB8 /* Shelters.swift */; };
 		ADA68CAC29BA5D7C00E0EBB8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA68CAB29BA5D7C00E0EBB8 /* DataManager.swift */; };
-		F35811CA29BBDCC100079C01 /* infoShelterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35811C929BBDCC100079C01 /* infoShelterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +46,6 @@
 		ADA68C7F29B9F3CC00E0EBB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADA68CA829BA5AFC00E0EBB8 /* Shelters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelters.swift; sourceTree = "<group>"; };
 		ADA68CAB29BA5D7C00E0EBB8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		F35811C929BBDCC100079C01 /* infoShelterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoShelterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,16 +111,12 @@
 			isa = PBXGroup;
 			children = (
 				ADA68C7529B9F3CB00E0EBB8 /* ViewController.swift */,
-
-				F35811C929BBDCC100079C01 /* infoShelterViewController.swift */,
-
 				6E00280929BBEB8900C0750E /* CityListViewController.swift */,
 				6E00280B29BBEBB300C0750E /* ShelterListViewController.swift */,
 				6E00280D29BBEBDE00C0750E /* AnimalListViewController.swift */,
 				6E00280F29BBEBFF00C0750E /* AnimalInfoViewController.swift */,
 
 				3A5AA7B429BBA1F7002121B3 /* DevelopersTableViewController.swift */,
-
 
 			);
 			path = ViewControllers;
@@ -222,7 +216,6 @@
 				6E00281029BBEBFF00C0750E /* AnimalInfoViewController.swift in Sources */,
 				6E00280C29BBEBB300C0750E /* ShelterListViewController.swift in Sources */,
 				ADA68CAC29BA5D7C00E0EBB8 /* DataManager.swift in Sources */,
-				F35811CA29BBDCC100079C01 /* infoShelterViewController.swift in Sources */,
 				ADA68C7229B9F3CB00E0EBB8 /* AppDelegate.swift in Sources */,
 				ADA68C7429B9F3CB00E0EBB8 /* SceneDelegate.swift in Sources */,
 				ADA68CA929BA5AFC00E0EBB8 /* Shelters.swift in Sources */,
