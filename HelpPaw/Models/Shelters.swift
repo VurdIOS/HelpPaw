@@ -38,11 +38,6 @@ enum City: String, CaseIterable {
 enum Breed: String {
     case dog = "Собака"
     case cat = "Кошка"
-    case parrot = "Попугай"
-    case turtle = "Черепаха"
-    case hamster = "Хомяк"
-    case rat = "Крыса"
-    
 }
 
 
