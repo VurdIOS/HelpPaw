@@ -20,7 +20,7 @@ struct Shelter {
     }
 }
 struct Animal {
-    let type: String
+    let type: Breed
     let name: String
     let age: Int
     let description: String
@@ -32,6 +32,16 @@ enum City: String, CaseIterable {
     case tumen = "Тюмень"
     case ekaterinburg = "Екатеринбург"
     case krasnodar = "Краснодар"
+}
+
+enum Breed: String {
+    case dog = "Собака"
+    case cat = "Кошка"
+    case parrot = "Попугай"
+    case turtle = "Черепаха"
+    case hamster = "Хомяк"
+    case rat = "Крыса"
+    
 }
 
 
