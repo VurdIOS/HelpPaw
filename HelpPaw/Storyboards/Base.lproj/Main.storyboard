@@ -253,9 +253,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ao-xd-l8N">
-                                <rect key="frame" x="123" y="457" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ao-xd-l8N">
+                                <rect key="frame" x="122.5" y="266.5" width="75" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -265,6 +264,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LFS-Qg-Gco"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4ao-xd-l8N" firstAttribute="centerY" secondItem="n2x-Wj-QQ9" secondAttribute="centerY" id="2yW-gi-7yC"/>
+                            <constraint firstItem="4ao-xd-l8N" firstAttribute="centerX" secondItem="n2x-Wj-QQ9" secondAttribute="centerX" id="WoU-dn-0Tb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YjM-yP-sy3"/>
                 </viewController>
