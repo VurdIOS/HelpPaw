@@ -89,7 +89,7 @@ class DataManager {
         ),
         Shelter(
             city: .tumen,
-            name: "Близкий друг",
+            name: "Лучший друг",
             address: "Тюмень, Голышева, 1/1",
             animals: [
                 Animal(
