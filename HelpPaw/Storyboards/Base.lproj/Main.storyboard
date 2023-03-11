@@ -139,7 +139,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Приют для собак и кошек" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hK-30-rDl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Приют для собак и кошек" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hK-30-rDl">
                                 <rect key="frame" x="16" y="54" width="288" height="28.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
                                 <nil key="textColor"/>
@@ -152,20 +152,20 @@
                                     <constraint firstAttribute="width" constant="100" id="lAg-gW-bjj"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="exH-eh-t5q">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="exH-eh-t5q">
                                 <rect key="frame" x="16" y="202.5" width="288" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oj0-rr-76N">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Oj0-rr-76N">
                                 <rect key="frame" x="16" y="233" width="288" height="20.5"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="qt0-nN-cks">
-                                <rect key="frame" x="16" y="283.5" width="288" height="130.5"/>
+                                <rect key="frame" x="16" y="278.5" width="288" height="130.5"/>
                                 <string key="text">Здесь животному помогают прийти в себя после сложной жизни на улице, проверяют здоровье, лечат и находят новую семью, Вы также можете выбрать питомца и забрать его к себе! </string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
@@ -192,10 +192,10 @@
                             <constraint firstItem="DnC-r5-X9w" firstAttribute="centerX" secondItem="3Pz-DL-WlB" secondAttribute="centerX" id="PWf-Ym-Tn9"/>
                             <constraint firstAttribute="bottom" secondItem="ZYl-MJ-BAl" secondAttribute="bottom" constant="50" id="Uod-g8-ew4"/>
                             <constraint firstItem="exH-eh-t5q" firstAttribute="leading" secondItem="qna-yI-UMt" secondAttribute="leading" constant="16" id="UyC-dC-V3D"/>
+                            <constraint firstItem="qt0-nN-cks" firstAttribute="top" secondItem="Oj0-rr-76N" secondAttribute="bottom" constant="25" id="VYO-oq-XKe"/>
                             <constraint firstItem="Oj0-rr-76N" firstAttribute="leading" secondItem="qna-yI-UMt" secondAttribute="leading" constant="16" id="YF6-As-q1L"/>
                             <constraint firstItem="ZYl-MJ-BAl" firstAttribute="height" secondItem="3Pz-DL-WlB" secondAttribute="height" multiplier="0.176056" id="afg-eR-hD7"/>
                             <constraint firstItem="9hK-30-rDl" firstAttribute="top" secondItem="qna-yI-UMt" secondAttribute="top" constant="10" id="dTI-J7-fcj"/>
-                            <constraint firstItem="qt0-nN-cks" firstAttribute="top" secondItem="Oj0-rr-76N" secondAttribute="bottom" constant="30" id="eVa-78-N87"/>
                             <constraint firstItem="exH-eh-t5q" firstAttribute="top" secondItem="DnC-r5-X9w" secondAttribute="bottom" constant="10" id="ldh-wN-wNE"/>
                             <constraint firstItem="Oj0-rr-76N" firstAttribute="top" secondItem="exH-eh-t5q" secondAttribute="bottom" constant="10" id="xEq-LR-Xnq"/>
                         </constraints>
