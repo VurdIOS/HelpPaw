@@ -64,8 +64,8 @@ class DataManager {
         ),
         Shelter(
             city: .moscow,
-            name: "Муркоша",
-            address: "Москва, ул. Осташковская, д. 14, стр. 2",
+            name: "Добрая рука",
+            address: "Москва, Грузинский вал, д. 7, стр. 3",
             animals: [
                 Animal(
                     type: .cat,
