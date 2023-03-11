@@ -32,7 +32,6 @@
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawprint.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2f0-yd-PyT">
                                 <rect key="frame" x="16" y="60.5" width="288" height="220.5"/>
-                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="221.33333333333331" id="uq1-tm-77Q"/>
                                 </constraints>
@@ -68,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XxF-vA-qYN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893.89312977099235" y="-38.732394366197184"/>
+            <point key="canvasLocation" x="892.5" y="-39.08450704225352"/>
         </scene>
         <!--Developers Table View Controller-->
         <scene sceneID="nhx-Ji-gQc">
@@ -297,21 +296,98 @@
             </objects>
             <point key="canvasLocation" x="4938.75" y="-104.5774647887324"/>
         </scene>
-        <!--View Controller-->
+        <!--User Profile View Controller-->
         <scene sceneID="9u6-18-7Z2">
             <objects>
-                <viewController id="Feo-BM-EEC" sceneMemberID="viewController">
+                <viewController id="Feo-BM-EEC" customClass="UserProfileViewController" customModule="HelpPaw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P8n-fA-bPR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Расскажите нам о себе" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3S-Ud-7WI">
+                                <rect key="frame" x="16" y="44" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGt-CV-gqE">
+                                <rect key="frame" x="16" y="420" width="288" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Отправить анкету"/>
+                                <connections>
+                                    <action selector="sendQuestionnaire" destination="Feo-BM-EEC" eventType="touchUpInside" id="mGw-5N-IS2"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fFN-RC-4Q8">
+                                <rect key="frame" x="16" y="89" width="288" height="286"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ваше ФИО" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HSu-Zd-JiN">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Возраст" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hmx-8M-JZp">
+                                        <rect key="frame" x="0.0" y="42" width="288" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Место работы " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nIk-Zt-cxg">
+                                        <rect key="frame" x="0.0" y="84" width="288" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Адрес проживания" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LXK-m5-ZzI">
+                                        <rect key="frame" x="0.0" y="126" width="288" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Контактный телефон" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wKx-if-Jrb">
+                                        <rect key="frame" x="0.0" y="168" width="288" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Укажите ваш e-mail" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5aZ-L7-9jg">
+                                        <rect key="frame" x="0.0" y="210" width="288" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Есть ли у вас дети? Какой возраст?" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mn8-UX-Phb">
+                                        <rect key="frame" x="0.0" y="252" width="288" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="uZH-vV-fS9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZGt-CV-gqE" firstAttribute="top" secondItem="Mn8-UX-Phb" secondAttribute="bottom" constant="45" id="Kpy-d9-dUd"/>
+                            <constraint firstItem="uZH-vV-fS9" firstAttribute="trailing" secondItem="a3S-Ud-7WI" secondAttribute="trailing" constant="16" id="R8i-DX-lZ6"/>
+                            <constraint firstItem="uZH-vV-fS9" firstAttribute="trailing" secondItem="ZGt-CV-gqE" secondAttribute="trailing" constant="16" id="UjG-a3-qUB"/>
+                            <constraint firstItem="a3S-Ud-7WI" firstAttribute="leading" secondItem="uZH-vV-fS9" secondAttribute="leading" constant="16" id="WRH-5J-PuZ"/>
+                            <constraint firstItem="a3S-Ud-7WI" firstAttribute="top" secondItem="uZH-vV-fS9" secondAttribute="top" id="WX4-Bn-Gct"/>
+                            <constraint firstItem="ZGt-CV-gqE" firstAttribute="centerX" secondItem="P8n-fA-bPR" secondAttribute="centerX" id="YEt-gO-E5l"/>
+                            <constraint firstItem="fFN-RC-4Q8" firstAttribute="leading" secondItem="uZH-vV-fS9" secondAttribute="leading" constant="16" id="dFM-0V-sIp"/>
+                            <constraint firstItem="uZH-vV-fS9" firstAttribute="trailing" secondItem="fFN-RC-4Q8" secondAttribute="trailing" constant="16" id="dYH-Ix-6ZL"/>
+                            <constraint firstItem="fFN-RC-4Q8" firstAttribute="top" secondItem="a3S-Ud-7WI" secondAttribute="bottom" constant="24.5" id="mYQ-4A-t7D"/>
+                            <constraint firstItem="ZGt-CV-gqE" firstAttribute="leading" secondItem="uZH-vV-fS9" secondAttribute="leading" constant="16" id="oTg-tU-aVC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9hE-nz-TU9"/>
+                    <connections>
+                        <outlet property="addressOfResidenceTextField" destination="LXK-m5-ZzI" id="UEs-U3-P3b"/>
+                        <outlet property="ageTextField" destination="hmx-8M-JZp" id="AmF-vU-zsF"/>
+                        <outlet property="childrenTextField" destination="Mn8-UX-Phb" id="T7w-4n-let"/>
+                        <outlet property="contactNumberTextField" destination="wKx-if-Jrb" id="cmt-fI-d2n"/>
+                        <outlet property="emailTextField" destination="5aZ-L7-9jg" id="5Oh-8a-2hu"/>
+                        <outlet property="placeOfWorkTextField" destination="nIk-Zt-cxg" id="Gx1-gF-B0b"/>
+                        <outlet property="userNameTextField" destination="HSu-Zd-JiN" id="a8b-0e-4ID"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bi2-Wa-GbX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5779" y="-108"/>
+            <point key="canvasLocation" x="5786" y="-105"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Agy-kt-Cvd">
@@ -389,9 +465,6 @@
         <image name="pawprint.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
