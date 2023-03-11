@@ -20,9 +20,12 @@ class ShelterListViewController: UITableViewController {
         //guard let animalsVC = segue.destination as? AnimalListViewController else { return }
         guard let tabBarVC = segue.destination as? UITabBarController else { return }
         guard let animalsVC = tabBarVC.viewControllers?.last as? AnimalListViewController else { return }
+        guard let infoShelterVC = tabBarVC.viewControllers?.first as? InfoShelterViewController else { return }
+        
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         
         animalsVC.animals = sheltersOfCity[indexPath.row].animals
+        infoShelterVC.shelter = sheltersOfCity[indexPath.row]
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

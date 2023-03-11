@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		3A5AA7B329BB9B04002121B3 /* Developers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AA7B229BB9B04002121B3 /* Developers.swift */; };
 		3A5AA7B529BBA1F7002121B3 /* DevelopersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AA7B429BBA1F7002121B3 /* DevelopersTableViewController.swift */; };
+
+
 		5482A06429BC9433005AF1CF /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482A06329BC9433005AF1CF /* UserProfileViewController.swift */; };
+
 		6E00280A29BBEB8900C0750E /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E00280929BBEB8900C0750E /* CityListViewController.swift */; };
 		6E00280C29BBEBB300C0750E /* ShelterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E00280B29BBEBB300C0750E /* ShelterListViewController.swift */; };
 		6E00280E29BBEBDE00C0750E /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E00280D29BBEBDE00C0750E /* AnimalListViewController.swift */; };
@@ -22,12 +25,16 @@
 		ADA68C7E29B9F3CC00E0EBB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA68C7C29B9F3CC00E0EBB8 /* LaunchScreen.storyboard */; };
 		ADA68CA929BA5AFC00E0EBB8 /* Shelters.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA68CA829BA5AFC00E0EBB8 /* Shelters.swift */; };
 		ADA68CAC29BA5D7C00E0EBB8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA68CAB29BA5D7C00E0EBB8 /* DataManager.swift */; };
+		ADEEEEAC29BCAD8400984FE8 /* InfoShelterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEEEEAB29BCAD8400984FE8 /* InfoShelterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A5AA7B229BB9B04002121B3 /* Developers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developers.swift; sourceTree = "<group>"; };
 		3A5AA7B429BBA1F7002121B3 /* DevelopersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersTableViewController.swift; sourceTree = "<group>"; };
+
+
 		5482A06329BC9433005AF1CF /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+
 		6E00280929BBEB8900C0750E /* CityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
 		6E00280B29BBEBB300C0750E /* ShelterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelterListViewController.swift; sourceTree = "<group>"; };
 		6E00280D29BBEBDE00C0750E /* AnimalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +49,7 @@
 		ADA68C7F29B9F3CC00E0EBB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADA68CA829BA5AFC00E0EBB8 /* Shelters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelters.swift; sourceTree = "<group>"; };
 		ADA68CAB29BA5D7C00E0EBB8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		ADEEEEAB29BCAD8400984FE8 /* InfoShelterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoShelterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +120,11 @@
 				6E00280D29BBEBDE00C0750E /* AnimalListViewController.swift */,
 				6E00280F29BBEBFF00C0750E /* AnimalInfoViewController.swift */,
 				3A5AA7B429BBA1F7002121B3 /* DevelopersTableViewController.swift */,
+
+				ADEEEEAB29BCAD8400984FE8 /* InfoShelterViewController.swift */,
+
 				5482A06329BC9433005AF1CF /* UserProfileViewController.swift */,
+
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -214,6 +226,7 @@
 				ADA68CAC29BA5D7C00E0EBB8 /* DataManager.swift in Sources */,
 				ADA68C7229B9F3CB00E0EBB8 /* AppDelegate.swift in Sources */,
 				ADA68C7429B9F3CB00E0EBB8 /* SceneDelegate.swift in Sources */,
+				ADEEEEAC29BCAD8400984FE8 /* InfoShelterViewController.swift in Sources */,
 				ADA68CA929BA5AFC00E0EBB8 /* Shelters.swift in Sources */,
 				6E00280E29BBEBDE00C0750E /* AnimalListViewController.swift in Sources */,
 				6E00280A29BBEB8900C0750E /* CityListViewController.swift in Sources */,

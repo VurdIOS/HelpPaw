@@ -134,18 +134,82 @@
         <!--Shelter-->
         <scene sceneID="P1d-of-z52">
             <objects>
-                <viewController id="DWr-Cf-TbG" sceneMemberID="viewController">
+                <viewController id="DWr-Cf-TbG" customClass="InfoShelterViewController" customModule="HelpPaw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Pz-DL-WlB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Приют для собак и кошек" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hK-30-rDl">
+                                <rect key="frame" x="16" y="54" width="288" height="28.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DnC-r5-X9w">
+                                <rect key="frame" x="110" y="92.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Kf0-QV-jyn"/>
+                                    <constraint firstAttribute="width" constant="100" id="lAg-gW-bjj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="exH-eh-t5q">
+                                <rect key="frame" x="16" y="202.5" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Oj0-rr-76N">
+                                <rect key="frame" x="16" y="233" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="qt0-nN-cks">
+                                <rect key="frame" x="16" y="278.5" width="288" height="130.5"/>
+                                <string key="text">Здесь животному помогают прийти в себя после сложной жизни на улице, проверяют здоровье, лечат и находят новую семью, Вы также можете выбрать питомца и забрать его к себе! </string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catdog" translatesAutoresizingMaskIntoConstraints="NO" id="ZYl-MJ-BAl">
+                                <rect key="frame" x="110" y="418" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZYl-MJ-BAl" secondAttribute="height" multiplier="1:1" id="ifR-Vp-suW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qna-yI-UMt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZYl-MJ-BAl" firstAttribute="centerX" secondItem="3Pz-DL-WlB" secondAttribute="centerX" id="0kZ-eg-FSh"/>
+                            <constraint firstAttribute="trailing" secondItem="qt0-nN-cks" secondAttribute="trailing" constant="16" id="6aR-kc-m2x"/>
+                            <constraint firstItem="qt0-nN-cks" firstAttribute="leading" secondItem="qna-yI-UMt" secondAttribute="leading" constant="16" id="7pm-wG-vMu"/>
+                            <constraint firstItem="qna-yI-UMt" firstAttribute="trailing" secondItem="Oj0-rr-76N" secondAttribute="trailing" constant="16" id="ArJ-Mj-2X2"/>
+                            <constraint firstItem="DnC-r5-X9w" firstAttribute="top" secondItem="9hK-30-rDl" secondAttribute="bottom" constant="10" id="EFg-Eh-7b3"/>
+                            <constraint firstItem="qna-yI-UMt" firstAttribute="trailing" secondItem="exH-eh-t5q" secondAttribute="trailing" constant="16" id="EOW-IZ-p1c"/>
+                            <constraint firstItem="qna-yI-UMt" firstAttribute="trailing" secondItem="9hK-30-rDl" secondAttribute="trailing" constant="16" id="M3n-ce-jpo"/>
+                            <constraint firstItem="9hK-30-rDl" firstAttribute="leading" secondItem="qna-yI-UMt" secondAttribute="leading" constant="16" id="MDA-Nz-WtN"/>
+                            <constraint firstItem="DnC-r5-X9w" firstAttribute="centerX" secondItem="3Pz-DL-WlB" secondAttribute="centerX" id="PWf-Ym-Tn9"/>
+                            <constraint firstAttribute="bottom" secondItem="ZYl-MJ-BAl" secondAttribute="bottom" constant="50" id="Uod-g8-ew4"/>
+                            <constraint firstItem="exH-eh-t5q" firstAttribute="leading" secondItem="qna-yI-UMt" secondAttribute="leading" constant="16" id="UyC-dC-V3D"/>
+                            <constraint firstItem="qt0-nN-cks" firstAttribute="top" secondItem="Oj0-rr-76N" secondAttribute="bottom" constant="25" id="VYO-oq-XKe"/>
+                            <constraint firstItem="Oj0-rr-76N" firstAttribute="leading" secondItem="qna-yI-UMt" secondAttribute="leading" constant="16" id="YF6-As-q1L"/>
+                            <constraint firstItem="ZYl-MJ-BAl" firstAttribute="height" secondItem="3Pz-DL-WlB" secondAttribute="height" multiplier="0.176056" id="afg-eR-hD7"/>
+                            <constraint firstItem="9hK-30-rDl" firstAttribute="top" secondItem="qna-yI-UMt" secondAttribute="top" constant="10" id="dTI-J7-fcj"/>
+                            <constraint firstItem="exH-eh-t5q" firstAttribute="top" secondItem="DnC-r5-X9w" secondAttribute="bottom" constant="10" id="ldh-wN-wNE"/>
+                            <constraint firstItem="Oj0-rr-76N" firstAttribute="top" secondItem="exH-eh-t5q" secondAttribute="bottom" constant="10" id="xEq-LR-Xnq"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Shelter" id="mRx-jH-2h5"/>
+                    <tabBarItem key="tabBarItem" title="Shelter" image="house.fill" catalog="system" id="mRx-jH-2h5"/>
+                    <connections>
+                        <outlet property="addressShelterLabel" destination="Oj0-rr-76N" id="au4-Kb-KVE"/>
+                        <outlet property="logoShelterImage" destination="DnC-r5-X9w" id="YRg-DT-nGr"/>
+                        <outlet property="nameShelterLabel" destination="exH-eh-t5q" id="Lsv-2R-kjA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6Y-f8-FqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4099" y="-830"/>
+            <point key="canvasLocation" x="4098.75" y="-830.28169014084506"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="ocf-MK-TSe">
@@ -190,7 +254,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ao-xd-l8N">
+
+                                <rect key="frame" x="122.5" y="266.5" width="75" height="35"/>
+
                                 <rect key="frame" x="16" y="513.5" width="288" height="34.5"/>
+
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Забрать меня домой"/>
                                 <connections>
@@ -274,6 +342,10 @@
                         <viewLayoutGuide key="safeArea" id="LFS-Qg-Gco"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+
+                            <constraint firstItem="4ao-xd-l8N" firstAttribute="centerY" secondItem="n2x-Wj-QQ9" secondAttribute="centerY" id="2yW-gi-7yC"/>
+                            <constraint firstItem="4ao-xd-l8N" firstAttribute="centerX" secondItem="n2x-Wj-QQ9" secondAttribute="centerX" id="WoU-dn-0Tb"/>
+
                             <constraint firstItem="LFS-Qg-Gco" firstAttribute="trailing" secondItem="nhG-eo-6wl" secondAttribute="trailing" constant="16" id="D7j-aO-4Dh"/>
                             <constraint firstItem="LFS-Qg-Gco" firstAttribute="trailing" secondItem="4ao-xd-l8N" secondAttribute="trailing" constant="16" id="GUj-Pc-GOM"/>
                             <constraint firstItem="4ao-xd-l8N" firstAttribute="top" secondItem="nhG-eo-6wl" secondAttribute="bottom" constant="20" id="KsY-GJ-8T6"/>
@@ -281,6 +353,7 @@
                             <constraint firstItem="nhG-eo-6wl" firstAttribute="leading" secondItem="LFS-Qg-Gco" secondAttribute="leading" constant="16" id="oSn-yu-8nN"/>
                             <constraint firstItem="nhG-eo-6wl" firstAttribute="top" secondItem="LFS-Qg-Gco" secondAttribute="top" constant="20" id="oWS-XC-tCQ"/>
                             <constraint firstItem="4ao-xd-l8N" firstAttribute="leading" secondItem="LFS-Qg-Gco" secondAttribute="leading" constant="16" id="sqn-6N-X3Z"/>
+
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YjM-yP-sy3"/>
@@ -462,6 +535,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="catdog" width="1080" height="1080"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="pawprint.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
