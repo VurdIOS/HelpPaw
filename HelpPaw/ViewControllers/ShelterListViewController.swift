@@ -41,5 +41,3 @@ class ShelterListViewController: UITableViewController {
         return cell
     }
 }
-
-//укмумкукмукмум
