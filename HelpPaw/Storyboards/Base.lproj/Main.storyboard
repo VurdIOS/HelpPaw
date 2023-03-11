@@ -205,21 +205,97 @@
             </objects>
             <point key="canvasLocation" x="1701" y="-408"/>
         </scene>
+
+        <!--Info Shelter View Controller-->
+
         <!--Shelter-->
+
         <scene sceneID="P1d-of-z52">
             <objects>
-                <viewController id="DWr-Cf-TbG" sceneMemberID="viewController">
+                <viewController id="DWr-Cf-TbG" customClass="infoShelterViewController" customModule="HelpPaw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Pz-DL-WlB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Приют для собак и кошек: " textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opj-Vp-J5M">
+                                <rect key="frame" x="16" y="64" width="288" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZRg-ET-JBz">
+                                <rect key="frame" x="16" y="228" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Vk-zg-2Av">
+                                <rect key="frame" x="110" y="108" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QuQ-cD-XS8"/>
+                                    <constraint firstAttribute="height" constant="100" id="RFm-9y-erk"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cr-ot-Ced">
+                                <rect key="frame" x="16" y="308" width="288" height="23"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="📬 Адрес:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NId-hg-qNr">
+                                        <rect key="frame" x="0.0" y="0.0" width="89.5" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UXz-P2-wrk">
+                                        <rect key="frame" x="89.5" y="0.0" width="198.5" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconAnimalsHelp" translatesAutoresizingMaskIntoConstraints="NO" id="GBS-LO-U39">
+                                <rect key="frame" x="16" y="361" width="288" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GBS-LO-U39" secondAttribute="height" multiplier="9:4" id="LHy-QP-amQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qna-yI-UMt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="8Vk-zg-2Av" firstAttribute="top" secondItem="opj-Vp-J5M" secondAttribute="bottom" constant="20" id="38b-IA-83H"/>
+                            <constraint firstItem="qna-yI-UMt" firstAttribute="trailing" secondItem="GBS-LO-U39" secondAttribute="trailing" constant="16" id="54r-dC-hcx"/>
+                            <constraint firstItem="ZRg-ET-JBz" firstAttribute="leading" secondItem="qna-yI-UMt" secondAttribute="leading" constant="16" id="9ih-an-bar"/>
+                            <constraint firstItem="7cr-ot-Ced" firstAttribute="leading" secondItem="qna-yI-UMt" secondAttribute="leading" constant="16" id="EpN-tZ-3AW"/>
+                            <constraint firstItem="8Vk-zg-2Av" firstAttribute="centerX" secondItem="3Pz-DL-WlB" secondAttribute="centerX" id="UWL-uq-hGF"/>
+                            <constraint firstItem="opj-Vp-J5M" firstAttribute="top" secondItem="qna-yI-UMt" secondAttribute="top" constant="20" id="X9m-YO-v3s"/>
+                            <constraint firstItem="ZRg-ET-JBz" firstAttribute="top" secondItem="8Vk-zg-2Av" secondAttribute="bottom" constant="20" id="YqZ-Im-gAd"/>
+                            <constraint firstItem="7cr-ot-Ced" firstAttribute="top" secondItem="ZRg-ET-JBz" secondAttribute="bottom" constant="59.5" id="Zsw-9w-v89"/>
+                            <constraint firstItem="qna-yI-UMt" firstAttribute="trailing" secondItem="7cr-ot-Ced" secondAttribute="trailing" constant="16" id="gkA-g0-XlU"/>
+                            <constraint firstItem="opj-Vp-J5M" firstAttribute="leading" secondItem="qna-yI-UMt" secondAttribute="leading" constant="16" id="kOA-BT-0JB"/>
+                            <constraint firstItem="qna-yI-UMt" firstAttribute="trailing" secondItem="ZRg-ET-JBz" secondAttribute="trailing" constant="16" id="neI-7F-saB"/>
+                            <constraint firstItem="GBS-LO-U39" firstAttribute="leading" secondItem="3Pz-DL-WlB" secondAttribute="leading" constant="16" id="sDq-Bn-RMc"/>
+                            <constraint firstItem="qna-yI-UMt" firstAttribute="bottom" secondItem="GBS-LO-U39" secondAttribute="bottom" constant="30" id="xAq-Bf-tkf"/>
+                            <constraint firstItem="qna-yI-UMt" firstAttribute="trailing" secondItem="opj-Vp-J5M" secondAttribute="trailing" constant="16" id="yL6-DG-jQp"/>
+                        </constraints>
                     </view>
+
+                    <tabBarItem key="tabBarItem" title="" image="iconShelter " id="KNB-yz-1cs"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="logoShelterImage" destination="8Vk-zg-2Av" id="ZNV-PZ-2q0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6Y-f8-FqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3352.5" y="-832.3943661971831"/>
+
                     <tabBarItem key="tabBarItem" title="Shelter" id="mRx-jH-2h5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6Y-f8-FqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4099" y="-830"/>
+ 
         </scene>
         <!--Root View Controller-->
         <scene sceneID="ocf-MK-TSe">
@@ -371,9 +447,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="IconAnimalsHelp" width="1080" height="1080"/>
+        <image name="iconShelter " width="50" height="50"/>
         <image name="pawprint.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
