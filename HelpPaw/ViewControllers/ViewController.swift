@@ -8,8 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    // tomuko0000
-// romanka
     override func viewDidLoad() {
         super.viewDidLoad()
     }
