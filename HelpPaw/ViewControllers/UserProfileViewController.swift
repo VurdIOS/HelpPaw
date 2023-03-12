@@ -10,7 +10,6 @@ import UIKit
 class UserProfileViewController: UIViewController {
     
     @IBOutlet var userNameTextField: UITextField!
-    @IBOutlet var ageTextField: UITextField!
     @IBOutlet var addressOfResidenceTextField: UITextField!
     @IBOutlet var contactNumberTextField: UITextField!
     @IBOutlet var childrenTextField: UITextField!
@@ -21,7 +20,7 @@ class UserProfileViewController: UIViewController {
     }
     
     @IBAction func sendQuestionnaire() {
-        let  questionnaireTextFields = [userNameTextField, ageTextField, addressOfResidenceTextField, contactNumberTextField, childrenTextField]
+        let  questionnaireTextFields = [userNameTextField, addressOfResidenceTextField, contactNumberTextField, childrenTextField]
         
         var allFieldsFilled = true
         for questionnaireTextField in questionnaireTextFields {
