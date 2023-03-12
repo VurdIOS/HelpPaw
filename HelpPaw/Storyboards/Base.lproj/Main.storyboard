@@ -404,63 +404,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ygx-1I-8I1">
-                                <rect key="frame" x="16" y="64" width="288" height="202"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XfR-bT-8mJ">
+                                <rect key="frame" x="16" y="64" width="288" height="160"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ваше ФИО" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="URM-oe-5Lg">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Возраст" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t57-aB-JUO">
-                                        <rect key="frame" x="0.0" y="42" width="288" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Адрес проживания" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k8x-Be-Kae">
-                                        <rect key="frame" x="0.0" y="84" width="288" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Контактный телефон" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xDM-60-Su0">
-                                        <rect key="frame" x="0.0" y="126" width="288" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Есть ли у Вас дети? Какой Возраст?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lWC-U2-dTw">
-                                        <rect key="frame" x="0.0" y="168" width="288" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ygx-1I-8I1">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="160"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ваше ФИО" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="URM-oe-5Lg">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Адрес проживания" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k8x-Be-Kae">
+                                                <rect key="frame" x="0.0" y="42" width="288" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Контактный телефон" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xDM-60-Su0">
+                                                <rect key="frame" x="0.0" y="84" width="288" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Есть ли у Вас дети? Какой Возраст?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lWC-U2-dTw">
+                                                <rect key="frame" x="0.0" y="126" width="288" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGt-CV-gqE">
-                                <rect key="frame" x="16" y="297" width="288" height="34.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Отправить анкету"/>
+                                <rect key="frame" x="70" y="232" width="180" height="36"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="EEU-OD-84O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Отправить анкету">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
                                 <connections>
-                                    <action selector="sendQuestionnaire" destination="Feo-BM-EEC" eventType="touchUpInside" id="mGw-5N-IS2"/>
+                                    <action selector="sendQuestionnaire" destination="Feo-BM-EEC" eventType="touchUpInside" id="adL-uF-8gK"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uZH-vV-fS9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.99215686319999996" blue="0.60000002379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Ygx-1I-8I1" firstAttribute="top" secondItem="uZH-vV-fS9" secondAttribute="top" constant="20" id="4iO-51-gg4"/>
-                            <constraint firstItem="uZH-vV-fS9" firstAttribute="trailing" secondItem="Ygx-1I-8I1" secondAttribute="trailing" constant="16" id="6uO-DD-RI6"/>
-                            <constraint firstItem="ZGt-CV-gqE" firstAttribute="top" secondItem="lWC-U2-dTw" secondAttribute="bottom" constant="31" id="FBB-f8-R8d"/>
-                            <constraint firstItem="ZGt-CV-gqE" firstAttribute="leading" secondItem="uZH-vV-fS9" secondAttribute="leading" constant="16" id="Fdf-Di-BKc"/>
-                            <constraint firstItem="uZH-vV-fS9" firstAttribute="trailing" secondItem="ZGt-CV-gqE" secondAttribute="trailing" constant="16" id="LyD-bB-wW7"/>
-                            <constraint firstItem="Ygx-1I-8I1" firstAttribute="leading" secondItem="uZH-vV-fS9" secondAttribute="leading" constant="16" id="fCF-cy-p03"/>
+                            <constraint firstItem="uZH-vV-fS9" firstAttribute="trailing" secondItem="XfR-bT-8mJ" secondAttribute="trailing" constant="16" id="0cl-4C-3tm"/>
+                            <constraint firstItem="ZGt-CV-gqE" firstAttribute="top" secondItem="lWC-U2-dTw" secondAttribute="bottom" constant="8" symbolic="YES" id="DTQ-xG-G3g"/>
+                            <constraint firstItem="XfR-bT-8mJ" firstAttribute="leading" secondItem="uZH-vV-fS9" secondAttribute="leading" constant="16" id="j0f-b1-V2P"/>
+                            <constraint firstItem="ZGt-CV-gqE" firstAttribute="centerX" secondItem="P8n-fA-bPR" secondAttribute="centerX" id="tXM-G9-3tG"/>
+                            <constraint firstItem="XfR-bT-8mJ" firstAttribute="top" secondItem="uZH-vV-fS9" secondAttribute="top" constant="20" id="ty2-av-qIZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Расскажите о себе" id="9hE-nz-TU9"/>
                     <connections>
-                        <outlet property="addressOfResidenceTextField" destination="k8x-Be-Kae" id="Uvu-NE-WxL"/>
-                        <outlet property="ageTextField" destination="t57-aB-JUO" id="IhO-MA-qBa"/>
-                        <outlet property="childrenTextField" destination="lWC-U2-dTw" id="ULu-7S-QgZ"/>
-                        <outlet property="contactNumberTextField" destination="xDM-60-Su0" id="4Z6-FJ-UB8"/>
-                        <outlet property="userNameTextField" destination="URM-oe-5Lg" id="iCm-hv-Jr8"/>
+                        <outlet property="addressOfResidenceTextField" destination="k8x-Be-Kae" id="7Pf-eQ-dcv"/>
+                        <outlet property="childrenTextField" destination="lWC-U2-dTw" id="BIQ-5o-Ghs"/>
+                        <outlet property="contactNumberTextField" destination="xDM-60-Su0" id="geV-QZ-S9l"/>
+                        <outlet property="userNameTextField" destination="URM-oe-5Lg" id="qP3-m3-FAz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bi2-Wa-GbX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
