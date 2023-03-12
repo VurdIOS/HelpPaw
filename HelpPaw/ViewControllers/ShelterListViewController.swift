@@ -13,11 +13,10 @@ class ShelterListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Choose shelter"
+        navigationItem.title = "Выберите приют"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //guard let animalsVC = segue.destination as? AnimalListViewController else { return }
         guard let tabBarVC = segue.destination as? UITabBarController else { return }
         guard let animalsVC = tabBarVC.viewControllers?.last as? AnimalListViewController else { return }
         guard let infoShelterVC = tabBarVC.viewControllers?.first as? InfoShelterViewController else { return }

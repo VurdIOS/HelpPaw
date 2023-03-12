@@ -13,7 +13,7 @@ class AnimalListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Animal list"
+        navigationItem.title = "Список животных приюта"
         tableView.rowHeight = 160
     }
     
