@@ -21,22 +21,26 @@ struct Developers {
                 secondName: "Ланцов",
                 position: "Team Lead",
                 photo: "Роман"
-            ),Developers(
+            ),
+            Developers(
                 name: "Камаль",
                 secondName: "Атавалиев",
                 position: "Pre-junior developer",
                 photo: "Камаль"
-            ),Developers(
+            ),
+            Developers(
                 name: "Виктория",
                 secondName: "Страдзина",
                 position: "Pre-junior developer",
                 photo: "Виктория"
-            ),Developers(
+            ),
+            Developers(
                 name: "Богдан",
                 secondName: "Радченко",
                 position: "Pre-junior developer",
                 photo: "Богдан"
-            ),Developers(
+            ),
+            Developers(
                 name: "Елена",
                 secondName: "Петрова",
                 position: "Pre-junior developer",
