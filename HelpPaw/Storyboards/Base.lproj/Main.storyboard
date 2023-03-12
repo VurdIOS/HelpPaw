@@ -192,7 +192,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catdog" translatesAutoresizingMaskIntoConstraints="NO" id="ZYl-MJ-BAl">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DogCat2" translatesAutoresizingMaskIntoConstraints="NO" id="ZYl-MJ-BAl">
                                 <rect key="frame" x="110" y="418" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZYl-MJ-BAl" secondAttribute="height" multiplier="1:1" id="ifR-Vp-suW"/>
@@ -545,7 +545,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="catdog" width="1080" height="1080"/>
+        <image name="DogCat2" width="1080" height="1080"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="pawprint.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
