@@ -7,9 +7,8 @@
 
 import UIKit
 
-class CityListViewController: UITableViewController {
+final class CityListViewController: UITableViewController {
     
-    //var shelters: [Shelter]!
     let shelters = Shelter.getShelters()
 
     override func viewDidLoad() {
