@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AnimalInfoViewController: UIViewController {
+final class AnimalInfoViewController: UIViewController {
     
     var animal: Animal!
     
