@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AnimalListViewController: UITableViewController {
+final class AnimalListViewController: UITableViewController {
 
     var animals: [Animal]!
 

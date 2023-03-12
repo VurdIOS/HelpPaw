@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ShelterListViewController: UITableViewController {
+final class ShelterListViewController: UITableViewController {
 
     var sheltersOfCity: [Shelter]!
     

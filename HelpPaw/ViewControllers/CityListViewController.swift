@@ -17,10 +17,10 @@ final class CityListViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let cellVC = segue.destination as? ShelterListViewController else { return }
+        guard let shelterVC = segue.destination as? ShelterListViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         
-        cellVC.sheltersOfCity = chooseSheltersFrom(City: City.allCases[indexPath.row])
+        shelterVC.sheltersOfCity = chooseSheltersFrom(City: City.allCases[indexPath.row])
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
