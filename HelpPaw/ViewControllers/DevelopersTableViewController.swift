@@ -16,6 +16,7 @@ final class DevelopersTableViewController: UITableViewController {
         navigationItem.title = "Разработчики"
         tableView.rowHeight = 100
         
+        
     }
 }
     
