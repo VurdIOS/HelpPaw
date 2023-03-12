@@ -429,7 +429,7 @@
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="sendQuestionnaire" destination="Feo-BM-EEC" eventType="touchUpInside" id="mGw-5N-IS2"/>
+                                    <action selector="sendQuestionnaire" destination="Feo-BM-EEC" eventType="touchUpInside" id="adL-uF-8gK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -445,10 +445,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Расскажите о себе" id="9hE-nz-TU9"/>
                     <connections>
-                        <outlet property="addressOfResidenceTextField" destination="k8x-Be-Kae" id="Uvu-NE-WxL"/>
-                        <outlet property="childrenTextField" destination="lWC-U2-dTw" id="ULu-7S-QgZ"/>
-                        <outlet property="contactNumberTextField" destination="xDM-60-Su0" id="4Z6-FJ-UB8"/>
-                        <outlet property="userNameTextField" destination="URM-oe-5Lg" id="iCm-hv-Jr8"/>
+                        <outlet property="addressOfResidenceTextField" destination="k8x-Be-Kae" id="7Pf-eQ-dcv"/>
+                        <outlet property="childrenTextField" destination="lWC-U2-dTw" id="BIQ-5o-Ghs"/>
+                        <outlet property="contactNumberTextField" destination="xDM-60-Su0" id="geV-QZ-S9l"/>
+                        <outlet property="userNameTextField" destination="URM-oe-5Lg" id="qP3-m3-FAz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bi2-Wa-GbX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

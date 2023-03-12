@@ -14,13 +14,38 @@ class UserProfileViewController: UIViewController {
     @IBOutlet var contactNumberTextField: UITextField!
     @IBOutlet var childrenTextField: UITextField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let keyboardToolbar = UIToolbar()
+        keyboardToolbar.sizeToFit()
+    
+        let doneButton = UIBarButtonItem(
+            barButtonSystemItem: .done,
+            target: self,
+            action: #selector(doneButtonPressed)
+        )
+        
+        let flexBarButton = UIBarButtonItem(
+            barButtonSystemItem: .flexibleSpace,
+            target: nil,
+            action: nil
+        )
+        
+        keyboardToolbar.items = [flexBarButton, doneButton]
+        
+        userNameTextField.inputAccessoryView = keyboardToolbar
+        addressOfResidenceTextField.inputAccessoryView = keyboardToolbar
+        contactNumberTextField.inputAccessoryView = keyboardToolbar
+        childrenTextField.inputAccessoryView = keyboardToolbar
+    }
+    
+    @objc func doneButtonPressed() {
+        view.endEditing(true)
     }
     
     @IBAction func sendQuestionnaire() {
-        let  questionnaireTextFields = [userNameTextField, addressOfResidenceTextField, contactNumberTextField, childrenTextField]
+        let questionnaireTextFields = [userNameTextField, addressOfResidenceTextField, contactNumberTextField, childrenTextField]
         
         var allFieldsFilled = true
         for questionnaireTextField in questionnaireTextFields {
@@ -39,9 +64,7 @@ class UserProfileViewController: UIViewController {
             for questionnaireTextField in questionnaireTextFields {
                 questionnaireTextField?.text = ""
             }
-            
         } else {
-            
             let alertController = UIAlertController(title: "Ой!", message: "Пожалуйста, заполните все поля в анкете.😿", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
             alertController.addAction(okAction)
@@ -49,3 +72,4 @@ class UserProfileViewController: UIViewController {
         }
     }
 }
+
