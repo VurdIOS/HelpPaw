@@ -19,7 +19,7 @@ class UserProfileViewController: UIViewController {
         
         let keyboardToolbar = UIToolbar()
         keyboardToolbar.sizeToFit()
-    
+        
         let doneButton = UIBarButtonItem(
             barButtonSystemItem: .done,
             target: self,
@@ -34,13 +34,17 @@ class UserProfileViewController: UIViewController {
         
         keyboardToolbar.items = [flexBarButton, doneButton]
         
-        userNameTextField.inputAccessoryView = keyboardToolbar
-        addressOfResidenceTextField.inputAccessoryView = keyboardToolbar
         contactNumberTextField.inputAccessoryView = keyboardToolbar
-        childrenTextField.inputAccessoryView = keyboardToolbar
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(tapGesture)
     }
     
     @objc func doneButtonPressed() {
+        view.endEditing(true)
+    }
+    
+    @objc func hideKeyboard() {
         view.endEditing(true)
     }
     
@@ -49,7 +53,7 @@ class UserProfileViewController: UIViewController {
         
         var allFieldsFilled = true
         for questionnaireTextField in questionnaireTextFields {
-            if questionnaireTextField?.text?.isEmpty ?? true {
+            guard let text = questionnaireTextField?.text, !text.isEmpty else {
                 allFieldsFilled = false
                 break
             }
@@ -57,7 +61,9 @@ class UserProfileViewController: UIViewController {
         
         if allFieldsFilled {
             let alertController = UIAlertController(title: "Анкета отправлена", message: "Спасибо, что помогли обрести дом еще одному пушистику!🐶🐱", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "Готово", style: .default, handler: nil)
+            let okAction = UIAlertAction(title: "Готово", style: .default) { _ in
+                self.dismiss(animated: true, completion: nil)
+            }
             alertController.addAction(okAction)
             present(alertController, animated: true, completion: nil)
             
@@ -72,4 +78,3 @@ class UserProfileViewController: UIViewController {
         }
     }
 }
-
