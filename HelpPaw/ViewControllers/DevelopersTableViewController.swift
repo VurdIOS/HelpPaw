@@ -35,7 +35,7 @@ extension DevelopersTableViewController {
         content.secondaryText = developer.position
         content.image = UIImage(named: developer.name)
         cell.contentConfiguration = content
-        
+        cell.selectionStyle = .none
         return cell
     }
     
