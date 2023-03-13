@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserProfileViewController: UIViewController {
+final class UserProfileViewController: UIViewController {
     
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var addressOfResidenceTextField: UITextField!
@@ -16,9 +16,72 @@ class UserProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addToolBar()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
+    @IBAction func sendQuestionnaire() {
+        checkTextFields()
+    }
+}
+
+//MARK: - AlertController
+extension UserProfileViewController {
+    private func showAlert(title: String, message: String, textField: UITextField? = nil) {
         
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            textField?.text = ""
+            textField?.becomeFirstResponder()
+        }
+        alert.addAction(okAction)
+        
+        present(alert, animated: true)
+    }
+    
+    //MARK: - Private Methods
+    private func checkTextFields() {
+        let questionnaireTextFields = [
+            userNameTextField,
+            addressOfResidenceTextField,
+            contactNumberTextField,
+            childrenTextField
+        ]
+        
+        var allFieldsFilled = true
+        
+        for questionnaireTextField in questionnaireTextFields {
+            guard let text = questionnaireTextField?.text, !text.isEmpty else {
+                allFieldsFilled = false
+                break
+            }
+        }
+        
+        if allFieldsFilled {
+            showAlert(
+                title: "Анкета отправлена",
+                message: "Спасибо, что помогли обрести дом еще одному пушистику!🐶🐱"
+            )
+            
+            for questionnaireTextField in questionnaireTextFields {
+                questionnaireTextField?.text = ""
+            }
+        } else {
+            showAlert(
+                title: "Ой!",
+                message: "Пожалуйста, заполните все поля в анкете.😿"
+            )
+        }
+    }
+    
+    private func addToolBar() {
         let keyboardToolbar = UIToolbar()
         keyboardToolbar.sizeToFit()
+        contactNumberTextField.inputAccessoryView = keyboardToolbar
         
         let doneButton = UIBarButtonItem(
             barButtonSystemItem: .done,
@@ -33,48 +96,16 @@ class UserProfileViewController: UIViewController {
         )
         
         keyboardToolbar.items = [flexBarButton, doneButton]
-        
-        contactNumberTextField.inputAccessoryView = keyboardToolbar
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
-        view.addGestureRecognizer(tapGesture)
     }
     
     @objc func doneButtonPressed() {
         view.endEditing(true)
     }
-    
-    @objc func hideKeyboard() {
-        view.endEditing(true)
-    }
-    
-    @IBAction func sendQuestionnaire() {
-        let questionnaireTextFields = [userNameTextField, addressOfResidenceTextField, contactNumberTextField, childrenTextField]
-        
-        var allFieldsFilled = true
-        for questionnaireTextField in questionnaireTextFields {
-            guard let text = questionnaireTextField?.text, !text.isEmpty else {
-                allFieldsFilled = false
-                break
-            }
-        }
-        
-        if allFieldsFilled {
-            let alertController = UIAlertController(title: "Анкета отправлена", message: "Спасибо, что помогли обрести дом еще одному пушистику!🐶🐱", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "Готово", style: .default) { _ in
-                self.dismiss(animated: true, completion: nil)
-            }
-            alertController.addAction(okAction)
-            present(alertController, animated: true, completion: nil)
-            
-            for questionnaireTextField in questionnaireTextFields {
-                questionnaireTextField?.text = ""
-            }
-        } else {
-            let alertController = UIAlertController(title: "Ой!", message: "Пожалуйста, заполните все поля в анкете.😿", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alertController.addAction(okAction)
-            present(alertController, animated: true, completion: nil)
-        }
+}
+
+//MARK: - UITextFieldDelegate
+extension UserProfileViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
     }
 }

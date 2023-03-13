@@ -75,7 +75,9 @@
                             <constraint firstItem="y6I-DY-WwO" firstAttribute="top" secondItem="2f0-yd-PyT" secondAttribute="bottom" constant="29.666666666666686" id="uFf-Rp-cj0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="zvH-89-9u0"/>
+                    <navigationItem key="navigationItem" id="zvH-89-9u0">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="jmQ-JI-GyU"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XxF-vA-qYN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,7 +143,9 @@
                             <outlet property="delegate" destination="gth-IM-5xI" id="Iqw-vm-kjO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="F80-Ha-N9Y"/>
+                    <navigationItem key="navigationItem" id="F80-Ha-N9Y">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="mAt-AP-GbS"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsz-ND-2lI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,7 +162,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Приют для собак и кошек" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hK-30-rDl">
                                 <rect key="frame" x="16" y="54" width="288" height="28.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DnC-r5-X9w">
@@ -176,20 +180,20 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="exH-eh-t5q">
                                 <rect key="frame" x="16" y="202.5" width="288" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Oj0-rr-76N">
                                 <rect key="frame" x="16" y="233" width="288" height="20.5"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="qt0-nN-cks">
-                                <rect key="frame" x="16" y="268.5" width="288" height="130.5"/>
-                                <string key="text">Здесь животному помогают прийти в себя после сложной жизни на улице, проверяют здоровье, лечат и находят новую семью, Вы также можете выбрать питомца и забрать его к себе! </string>
+                                <rect key="frame" x="16" y="268.5" width="288" height="108.5"/>
+                                <string key="text">Здесь животному помогают прийти в себя после сложной жизни на улице, находят новую семью, Вы можете выбрать питомца и забрать его к себе! </string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DogCat2" translatesAutoresizingMaskIntoConstraints="NO" id="ZYl-MJ-BAl">
@@ -260,7 +264,9 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Animals" image="pawprint.circle.fill" catalog="system" id="tcd-Wa-vgp"/>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="bvw-t0-20N"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="bvw-t0-20N">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="da6-Kb-z4u"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPp-rT-s37" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -288,7 +294,7 @@
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDK-qs-vh3">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="429.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nBz-YJ-V9y">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nBz-YJ-V9y">
                                                 <rect key="frame" x="16" y="16" width="256" height="172"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jDC-Ir-5q8">
@@ -383,7 +389,9 @@
                             <constraint firstItem="4ao-xd-l8N" firstAttribute="leading" secondItem="LFS-Qg-Gco" secondAttribute="leading" constant="16" id="sqn-6N-X3Z"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="YjM-yP-sy3"/>
+                    <navigationItem key="navigationItem" id="YjM-yP-sy3">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="AT9-ma-ccP"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="animalImage" destination="nBz-YJ-V9y" id="LNK-c4-K65"/>
                         <outlet property="customView" destination="nhG-eo-6wl" id="X3y-NT-dCk"/>
@@ -413,12 +421,18 @@
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ваше ФИО" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="URM-oe-5Lg">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Feo-BM-EEC" id="lSw-ej-hI3"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Адрес проживания" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k8x-Be-Kae">
                                                 <rect key="frame" x="0.0" y="42" width="288" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Feo-BM-EEC" id="MgN-NV-cyr"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Контактный телефон" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xDM-60-Su0">
                                                 <rect key="frame" x="0.0" y="84" width="288" height="34"/>
@@ -428,7 +442,10 @@
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Есть ли у Вас дети? Какой Возраст?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lWC-U2-dTw">
                                                 <rect key="frame" x="0.0" y="126" width="288" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Feo-BM-EEC" id="8RZ-ym-hYz"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -445,6 +462,11 @@
                                 <state key="normal" title="Отправить анкету">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="sendQuestionnaire" destination="Feo-BM-EEC" eventType="touchUpInside" id="adL-uF-8gK"/>
                                 </connections>
@@ -517,7 +539,9 @@
                             <outlet property="delegate" destination="GMd-HW-zYi" id="IgE-LI-x4W"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="AMu-GA-9Ax"/>
+                    <navigationItem key="navigationItem" id="AMu-GA-9Ax">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="Xem-iR-QCF"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ovt-Ji-xcK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -528,7 +552,9 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tOh-Ld-6Qr" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="zw1-mc-mR6"/>
+                    <navigationItem key="navigationItem" id="zw1-mc-mR6">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="h61-2g-coh"/>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PLK-Ws-IkG">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>

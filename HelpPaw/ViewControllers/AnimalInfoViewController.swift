@@ -22,10 +22,12 @@ final class AnimalInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "О животном"
+        
         nameAnimalLAbel.text = animal.name
         yearsOldLabel.text = String(animal.age)
         descriptionLabel.text = animal.description
         animalImage.image = UIImage(named: "\(animal.name)")
+        animalImage.layer.cornerRadius = 20
         
         customView.makeShadow()
         setupView()
