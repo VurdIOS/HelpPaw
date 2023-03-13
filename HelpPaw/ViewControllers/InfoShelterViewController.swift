@@ -11,15 +11,10 @@ class InfoShelterViewController: UIViewController {
     
     var shelter: Shelter!
 
-    @IBOutlet var logoShelterImage: UIImageView! {
-        didSet {
-//            logoShelterImage.layer.cornerRadius  = logoShelterImage.frame.height / 2
-        }
-    }
+    @IBOutlet var logoShelterImage: UIImageView!
     
     @IBOutlet var nameShelterLabel: UILabel!
     @IBOutlet var addressShelterLabel: UILabel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +22,4 @@ class InfoShelterViewController: UIViewController {
         addressShelterLabel.text = shelter.address
         logoShelterImage.image = UIImage(named: shelter.name)
     }
-    
-
-
 }

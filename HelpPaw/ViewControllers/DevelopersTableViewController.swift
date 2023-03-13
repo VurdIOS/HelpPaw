@@ -15,8 +15,6 @@ final class DevelopersTableViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.title = "Разработчики"
         tableView.rowHeight = 100
-        
-        
     }
 }
     
@@ -47,28 +45,5 @@ extension DevelopersTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
-    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let View = UIView(frame:CGRect(
-            x: 0,
-            y: 0,
-            width: view.frame.width,
-            height: 100
-        ))
-        view.addSubview(View)
-        
-        let imgView = UIImageView(frame:CGRect(
-            x: View.frame.width / 2 - 35,
-            y: 30,
-            width: 100,
-            height: 100
-        ))
-        
-        imgView.image = UIImage(systemName: "pawprint.circle.fill")
-        imgView.tintColor = .systemBrown
-        View.addSubview(imgView)
-        return View
-    }
-    
 }
 
